@@ -1,0 +1,35 @@
+/* Main container for the banner */
+.banner-container {
+    display: flex; /* Enables a flexible layout */
+    width: 100%;
+    height: auto;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 10px; /* Add some space around the content */
+}
+
+/* Left division (banner image) */
+.banner-left {
+    flex: 5; /* Takes up 40% of the width */
+    text-align: left;
+}
+
+/* Right division (content) */
+.banner-right {
+    flex: 5; /* Takes up 60% of the width */
+    padding-left: 20px; /* Add some spacing between the divisions */
+    display: flex;
+    flex-direction: column; /* Aligns content vertically */
+    justify-content: center; /* Vertically centers the text */
+}
+
+/* Styling for the banner image */
+.banner-left img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Prevents the image from exceeding its container */
+}
+
+.center {
+    text-align: center;
+}
+  
