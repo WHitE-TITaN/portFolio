@@ -1,9 +1,73 @@
-/* Main container for the banner */
+@font-face {
+    font-family: pixalFont;
+    src: url(fonts/pixy/PIXY.ttf) format('truetype'),
+        url(fonts/pixy/PIXY.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: hubot;
+    src: url(fonts/hubot/HubotSans-VariableFont_wdth\,wght.ttf) format('truetype'),
+        url(fonts/hubot/HubotSans-Italic-VariableFont_wdth\,wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: barlow;
+    src: url(fonts/barlow/Barlow-Black.ttf) format('truetype'),
+        url(fonts/barlow/Barlow-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: bytebounce;
+    src: url(fonts/bytebounce/ByteBounce.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: jacquarda;
+    src: url(fonts/jacquarda/JacquardaBastarda9-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: playWrite;
+    src: url(fonts/playWrite/PlaywriteESGuides-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Style the container to use Flexbox */
 .banner-container {
-    display: flex; /* Enables a flexible layout */
-    width: 100%;
-    height: auto;
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 10px; /* Add some space around the content */
+    display: flex;             /* Use Flexbox layout */
+    width: 100%;               
+    margin: 0 auto;            /* Center the container horizontally */
+    
+}
+
+/* Style the left division (image section) */
+.banner-left {
+    flex: 1;                   /* Take up equal space in the container */
+}
+
+/* Style the right division (text and links) */
+.banner-right {
+    align-items: center;
+    flex: 1;                   /* Take up equal space in the container */ 
+    padding-left: 10px;
+}
+
+/* Optional: Center the GitHub link and adjust image size */
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black; /* Adjust as needed */
 }
 
