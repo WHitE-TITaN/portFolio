@@ -13,7 +13,34 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: barlow;
+    src: url(fonts/barlow/Barlow-Black.ttf) format('truetype'),
+        url(fonts/barlow/Barlow-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: bytebounce;
+    src: url(fonts/bytebounce/ByteBounce.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: jacquarda;
+    src: url(fonts/jacquarda/JacquardaBastarda9-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: playWrite;
+    src: url(fonts/playWrite/PlaywriteESGuides-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* Style the container to use Flexbox */
 .banner-container {
