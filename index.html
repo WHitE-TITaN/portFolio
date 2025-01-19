@@ -1,39 +1,52 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>@WHitE-TITaN</title>
-        <link rel="stylesheet" href="assets/style.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@WHitE-TITaN</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <!-- Include marked.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
 <body>
 
-<div stylev = "width: 100%;">
-
-    <!--banner portion-->
-    <div style="width: 60%; float:left; ">
-        <img src="assets/userNameBanner.gif" width="95%" alt="userNameBanner" />
-        
-        
+<div class="banner-container">
+    <!-- Left division: README.md content -->
+    <div class="banner-left">
+        <h2>GitHub README</h2>
+        <div id="readme-content">
+            <!-- Content will be dynamically loaded here -->
+            <p>Loading README...</p>
+        </div>
     </div>
 
-    <!-- Right Division about me portion !-->
-    <div style="width: 40%; float:left;">
-        <h2>About Me</h2>
-
-        <p>Hi, I am Dheeraj Kumar, an Aspiring Software Enginer & gamer.
-            Welcome to my portfolio!</p>
-
-        <a href="https://github.com/WHitE-TITaN" target="_blank" target = "_blank" class = "center">
-            GitHub !
-            <img src="assets/Icons/GitHub.png" width="45" height="30" alt="GitHub Profile"/>
-        </a>
-
-        <a href ="mailto:dheerajk488621@gmail.com" title="Connect via mail" target ="_blank">
-            <img src = "assets/Icons/mail.png" width="30" height="30" alt="mail">
-        </a>
+    <!-- Right division: Additional content -->
+    <div class="banner-right">
+        <h1>HELLO WORLD</h1>
+        <p>Welcome to my portfolio! Explore my projects and contributions.</p>
     </div>
-
 </div>
 
-<hr>
+<script>
+    // Fetch the README.md from the assets folder on GitHub Pages
+    const readmeUrl = "https://white-titan.github.io/portFolio/assets/readMe.md";
+
+    fetch(readmeUrl)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Failed to fetch README.md");
+            }
+            return response.text();
+        })
+        .then(data => {
+            // Convert Markdown to HTML using marked.js
+            document.getElementById("readme-content").innerHTML = marked(data);
+        })
+        .catch(error => {
+            console.error("Error fetching README.md:", error);
+            document.getElementById("readme-content").innerText = "Failed to load README.md";
+        });
+</script>
+
 </body>
 </html>

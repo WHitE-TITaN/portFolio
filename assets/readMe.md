@@ -43,7 +43,7 @@
     <tr>
       <td style="border: none;" align="center">
         <a href="mailto:dheerajk488621@gmail.com">
-          <img src="assets\Icons\Connect.gif" alt="Connect with me" width="60" title = "mail"/>
+          <img src="Icons\Connect.gif" alt="Connect with me" width="60" title = "mail"/>
         </a>
       </td>
       <td style="border: none;" align="center">
@@ -54,6 +54,11 @@
       <td style="border: none;" align="center">
         <a href="https://leetcode.com/u/WHITE_TITAN" target="_blank">
           <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" width="52" height="40" alt="LeetCode Profile" title = "LeetCode"/>
+        </a>
+      </td>
+      <td style="border: none;" align="center">
+        <a href="https://github.com/WHitE-TITaN" target="_blank">
+          <img src="Icons/GitHub.png" width="70" alt="LeetCode Profile" title = "GitHub"/>
         </a>
       </td>
     </tr>
