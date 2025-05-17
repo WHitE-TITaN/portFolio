@@ -17,14 +17,14 @@
     padding-left: 10px;
     width: 100%;
     gap: 20px;
-    height: 50px;
+    height: ;
     display: flex;
     text-align: center;
     align-items: center;
 }
 
 .topNavBar a{
-    color: black;
+    color: white;
     font-family: minecraft;
     font-size: medium;
     text-decoration: none;
