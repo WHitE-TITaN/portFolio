@@ -15,9 +15,9 @@
 /* top navigation bar style*/
 .topNavBar{
     padding-left: 10px;
+    padding-top: 10px;
     width: 100%;
     gap: 20px;
-    height: ;
     display: flex;
     text-align: center;
     align-items: center;
@@ -28,6 +28,11 @@
     font-family: minecraft;
     font-size: medium;
     text-decoration: none;
+}
+
+.topNavBar h1{
+    color: white;
+    font-family: minecraft;
 }
 
 .topNavBar img{
