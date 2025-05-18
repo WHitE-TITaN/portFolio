@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*defininf fonts fot the page*/
+
+@font-face {
+    font-family: minecraft;
+    src: url(assets/fonts/Minecraft/Minecraft-Regular.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* top navigation bar style*/
+.topNavBar{
+    padding-left: 10px;
+    width: 100%;
+    gap: 20px;
+    height: ;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.topNavBar a{
+    color: white;
+    font-family: minecraft;
+    font-size: medium;
+    text-decoration: none;
+}
+
+.topNavBar img{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
