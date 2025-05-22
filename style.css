@@ -72,18 +72,24 @@
   gap: 10px;
 }
 
-.experience{
+.self-introduction{
   color: white;
 }
 
 .profilePictue{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30%;
 }
 
 .profilePictue img{
-  padding-left: 10%;
-  padding-right: 10%;
   width: 50%;
   border-radius: 50%; 
 }
 
+.introduction h1{
+  font-family: minecraft;
+  color: white;
+  font-weight: bold;
+}
