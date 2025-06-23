@@ -12,8 +12,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: terminus;
+    src: url(/assets/fonts/terminus/TerminusTTF-4.49.3.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* top navigation bar style*/
 .topNavBar{
+    font-family: terminus;
     padding-left: 10px;
     padding-top: 10px;
     width: 100%;
@@ -74,6 +82,7 @@
 
 .self-introduction{
   color: white;
+  font-family: terminus;
 }
 
 .profilePictue{
